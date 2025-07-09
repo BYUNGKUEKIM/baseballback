@@ -1,7 +1,8 @@
-  fastapi
-  uvicorn
-  pandas
-  scikit-learn
-  requests
-  beautifulsoup4
-  # 기타 필요한 패키지
+fastapi
+uvicorn
+pandas
+scikit-learn
+requests
+beautifulsoup4
+xgboost==1.7.5
+# 기타 필요한 패키지
