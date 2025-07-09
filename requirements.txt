@@ -1,6 +1,7 @@
-fastapi
-uvicorn
-pandas
-scikit-learn
-requests
-beautifulsoup4 
+  fastapi
+  uvicorn
+  pandas
+  scikit-learn
+  requests
+  beautifulsoup4
+  # 기타 필요한 패키지
