@@ -6,6 +6,20 @@ from ai_predictor import predict_today_games
 
 app = FastAPI()
 
+# === CORS 미들웨어 추가 ===
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://bkbaseball.netlify.app",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+# =========================
+
 data_dir = os.path.join(os.path.dirname(__file__), 'data')
 
 def load_today_games():
